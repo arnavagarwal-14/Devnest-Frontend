@@ -1,0 +1,69 @@
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.outerborder{
+    position: absolute;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	background-color: red;
+	border: 60px solid red;
+}
+
+.innerborder{
+    position: absolute;
+	height: 495px;
+	width: 495px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.hour{
+    position: absolute;
+	border-left: 5px solid black;
+	height: 30%;
+	top: 50%;
+	left: 50%;
+	transform-origin: top;  
+}
+
+.minute{
+    position: absolute;
+	border-left: 5px solid black;
+	height: 35%;
+	top: 50%;
+	left: 50%;
+	transform-origin: top;
+}
+
+.seconds{
+    position: absolute;
+	border-left: 5px solid black;
+	height: 45%;
+	top: 50%;
+	left: 50%;
+	transform-origin: top;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.hour {
+    animation: rotation 43200s infinite linear;
+}
+.minute {
+    animation: rotation 3600s infinite linear;
+}
+.seconds {
+	animation: rotation 60s infinite linear;
+}
+
