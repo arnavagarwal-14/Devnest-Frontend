@@ -1,4 +1,4 @@
-function firstorn(arr,n){
+function firstorn(arr,n=0){
     return(arr.slice(0,n));
 }
 
